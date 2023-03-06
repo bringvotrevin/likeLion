@@ -1,0 +1,40 @@
+div {
+  width: 16rem;
+  height: 6rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 6rem;
+  margin: 1rem auto;
+  box-sizing: border-box;
+}
+
+.black {
+  line-height: 6rem;
+  background-color: #343f50;
+  box-shadow: inset 5px 5px #4a5568;
+  border: 0.3rem solid #000;
+  color: white;
+}
+
+.blue {
+  color: white;
+  height: 8rem;
+  line-height: 7.5rem;
+  border: 0.3rem dashed rgb(208, 203, 226);
+  border-radius: 5rem;
+  background: linear-gradient(to right, #933cd6, #356afc);
+  background-clip: padding-box;
+}
+
+.white {
+  font-weight: 800;
+  color: #4a5568;
+  background-color: whitesmoke;
+  border: 0.1rem solid #e2e2e2;
+  border-radius: 0 80px 80px 80px;
+  /* border-top-right-radius: 20% 50%;
+  border-bottom-right-radius: 20% 50%;
+  border-bottom-left-radius: 20% 50%; */
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+}
