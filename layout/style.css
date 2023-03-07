@@ -1,0 +1,45 @@
+div {
+  background-color: cornflowerblue;
+  width: 500px;
+  height: 500px;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+header {
+  color: white;
+  background-color: skyblue;
+  height: 90px;
+  line-height: 90px;
+}
+
+section {
+  color: white;
+  background-color: rgb(38, 41, 95);
+  width: 68.5%;
+  height: 300px;
+  line-height: 300px;
+  margin-top: 10px;
+  float: left;
+}
+
+aside {
+  background-color: greenyellow;
+  width: 29.5%;
+  height: 300px;
+  line-height: 300px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+footer {
+  color: white;
+  background-color: salmon;
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  height: 90px;
+  line-height: 90px;
+}
