@@ -1,0 +1,71 @@
+/* outline으로 구현시 focus시 감춰진다 outlint은 주로 포커스 되는 형태에 나타나는 효과?이기 때뮨???
+각각 박스 사이 갭 구현시
+```
+div:not(:first-child) {
+	margin-top: 2px;
+}
+
+div~div {
+	margin-top: 2px;
+}
+```
+로 구현 가능 */
+
+body {
+  background: rosybrown;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+.card-item a {
+  text-decoration: none;
+  color: #29363d;
+  display: block;
+  width: 288px;
+  background: #fff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.card-item img {
+  width: 100%;
+  aspect-ratio: 288/196;
+  /* 이미지 찌그러지는것 방지 */
+  object-fit: cover;
+  /* 이미지 하단 여백 제거 */
+  vertical-align: top;
+}
+
+.card-text {
+  padding: 24px 16px 16px;
+}
+
+.card-text .title {
+  font-size: 16px;
+  /* 한줄처리를 공백으로 감싸지 않겠다..? */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-text .title + p {
+  font-size: 12px;
+  color: #5a6a72;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-all;
+  margin: 12px 0 16px;
+  line-height: 20px;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 6px;
+}
