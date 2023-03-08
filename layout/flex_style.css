@@ -1,0 +1,38 @@
+* {
+  background-color: beige;
+}
+
+.container {
+  background-color: cornflowerblue;
+  padding: 8px;
+  width: 50vh;
+  height: 50vh;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+div > * {
+}
+
+.header {
+  background-color: powderblue;
+  width: 50vh;
+}
+
+.section,
+.article {
+  background-color: rgb(67, 89, 169);
+  width: calc(70% - 8px);
+}
+
+.aside {
+  background-color: greenyellow;
+  width: 30%;
+}
+
+.footer {
+  background-color: salmon;
+  width: 50vh;
+}
