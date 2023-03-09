@@ -1,15 +1,21 @@
 * {
   font-family: Pretendard;
 }
+
+.container {
+  /* width: min(1224px, 100% - 60%); */
+}
+
 .card {
   position: relative;
   width: 288px;
   height: 348px;
-  margin-left: 63px;
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
   background: #fff;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  display: block;
   overflow: hidden;
 }
 
