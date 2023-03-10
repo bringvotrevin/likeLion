@@ -1,0 +1,38 @@
+body,
+h1,
+p {
+  margin: initial;
+  padding: initial;
+}
+
+body {
+  background-image: url('images/bg.png');
+}
+
+div.content {
+  width: 300px;
+  margin: 30px auto;
+}
+
+div.content img {
+  text-align: center;
+  vertical-align: top;
+}
+
+div.content section.textbox {
+  background-color: #93572e;
+  padding: 16px 25px 35px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 11px #4a260b;
+  letter-spacing: -0.5px;
+}
+
+div.content section.textbox h1 {
+  color: #fff;
+  font-size: 30px;
+}
+
+div.content section.textbox p {
+  margin-top: 10px;
+  color: #d3bbae;
+}
