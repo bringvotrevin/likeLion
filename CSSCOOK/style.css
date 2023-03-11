@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Climate+Crisis&display=swap');
-
-* {
-  font-family: 'Black Han Sans', sans-serif;
-}
 body,
 h1,
 p {
   margin: initial;
   padding: initial;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -16,7 +15,7 @@ body {
 
 div.content {
   width: 300px;
-  margin: 30px auto;
+  margin: 40px auto;
 }
 
 div.content img {
@@ -26,18 +25,20 @@ div.content img {
 
 div.content section.textbox {
   background-color: #93572e;
-  padding: 16px 25px 35px;
+  padding: 16px 20px 35px;
   border-radius: 0 0 25px 25px;
-  box-shadow: 0 11px #4a260b;
+  box-shadow: 0 11px 0 -2px #4a260b;
+  font-weight: 600;
+  line-height: 23px;
   letter-spacing: -0.5px;
 }
 
 div.content section.textbox h1 {
   color: #fff;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 div.content section.textbox p {
-  margin-top: 10px;
+  margin-top: 15px;
   color: #d3bbae;
 }
