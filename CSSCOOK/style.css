@@ -6,7 +6,7 @@ p {
 }
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial;
 }
 
 body {
@@ -25,11 +25,9 @@ div.content img {
 
 div.content section.textbox {
   background-color: #93572e;
-  padding: 16px 20px 35px;
+  padding: 15px 20px 34px 20px;
   border-radius: 0 0 25px 25px;
   box-shadow: 0 11px 0 -2px #4a260b;
-  font-weight: 600;
-  line-height: 23px;
   letter-spacing: -0.5px;
 }
 
@@ -39,6 +37,8 @@ div.content section.textbox h1 {
 }
 
 div.content section.textbox p {
-  margin-top: 15px;
+  margin-top: 14px;
+  font-size: 17px;
   color: #d3bbae;
+  line-height: 22px;
 }
