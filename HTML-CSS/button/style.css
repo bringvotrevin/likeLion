@@ -1,0 +1,134 @@
+h1,
+h2,
+div {
+  margin: initial;
+  padding: initial;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 30px;
+}
+
+div.container {
+  display: flex;
+  height: 400px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+section {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  margin: 5px 30px;
+}
+
+h2 {
+  width: 100px;
+  line-height: 60px;
+  text-align: center;
+  margin: 5px auto;
+}
+
+button {
+  width: 150px;
+  height: 60px;
+  margin: 5px auto;
+  font-size: 20px;
+  font-weight: 700px;
+  background-color: #343f50;
+  box-shadow: inset 3px 3px #4a5568;
+  border: 3px solid #1a202c;
+  color: #cbd5df;
+}
+
+button.black-default:not(:disabled):hover {
+  text-decoration: underline;
+  color: white;
+}
+button.black-default:active {
+  box-shadow: inset 3px 3px #262f3e;
+}
+button.black-default:disabled {
+  box-shadow: none;
+  color: #4a5568;
+  background-color: #3a4556;
+  border: 3px solid #3a4556;
+}
+
+button[class$='hover'],
+button[class$='active'] {
+  color: white;
+  text-decoration: underline;
+}
+
+button.black-active {
+  box-shadow: inset 3px 3px #262f3e;
+}
+
+button.black-disabled {
+  box-shadow: none;
+  color: #4a5568;
+  background-color: #3a4556;
+  border: 3px solid #3a4556;
+}
+
+button.blue-default:not(:disabled):hover {
+  text-decoration: underline;
+  color: white;
+  background-color: #439aff;
+  border-color: #439aff;
+  box-shadow: inset 3px 3px #73b4ff;
+}
+
+button.blue-default:active {
+  box-shadow: inset 3px 3px #3b78be;
+}
+
+button.blue-default {
+  color: #439aff;
+}
+
+button[class^='blue']:not(button[class$='default']) {
+  background-color: #439aff;
+  border-color: #439aff;
+}
+
+button.blue-hover {
+  box-shadow: inset 3px 3px #73b4ff;
+}
+
+button.blue-active {
+  box-shadow: inset 3px 3px #3b78be;
+}
+
+button.red-default:not(:disabled):hover {
+  text-decoration: underline;
+  color: white;
+  background-color: #eb5757;
+  border-color: #eb5757;
+  box-shadow: inset 3px 3px #fd6f6f;
+}
+
+button.red-default:active {
+  box-shadow: inset 3px 3px #d94242;
+}
+
+button.red-default {
+  color: #eb5757;
+}
+
+button[class^='red']:not(button[class$='default']) {
+  background-color: #eb5757;
+  border-color: #eb5757;
+}
+
+button.red-hover {
+  box-shadow: inset 3px 3px #fd6f6f;
+}
+
+button.red-active {
+  box-shadow: inset 3px 3px #d94242;
+}
