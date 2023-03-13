@@ -75,6 +75,10 @@ button.black-disabled {
   border: 3px solid #3a4556;
 }
 
+button.blue-default {
+  color: #439aff;
+}
+
 button.blue-default:not(:disabled):hover {
   text-decoration: underline;
   color: white;
@@ -83,12 +87,8 @@ button.blue-default:not(:disabled):hover {
   box-shadow: inset 3px 3px #73b4ff;
 }
 
-button.blue-default:active {
+.blue button.blue-default:active {
   box-shadow: inset 3px 3px #3b78be;
-}
-
-button.blue-default {
-  color: #439aff;
 }
 
 button[class^='blue']:not(button[class$='default']) {
@@ -104,6 +104,10 @@ button.blue-active {
   box-shadow: inset 3px 3px #3b78be;
 }
 
+button.red-default {
+  color: #eb5757;
+}
+
 button.red-default:not(:disabled):hover {
   text-decoration: underline;
   color: white;
@@ -112,12 +116,8 @@ button.red-default:not(:disabled):hover {
   box-shadow: inset 3px 3px #fd6f6f;
 }
 
-button.red-default:active {
+.red button.red-default:active {
   box-shadow: inset 3px 3px #d94242;
-}
-
-button.red-default {
-  color: #eb5757;
 }
 
 button[class^='red']:not(button[class$='default']) {
