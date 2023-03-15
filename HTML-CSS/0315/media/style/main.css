@@ -1,0 +1,130 @@
+div,
+section,
+h1,
+h2,
+p,
+a {
+  margin: initial;
+  padding: initial;
+}
+
+.wrapper {
+  display: flex;
+  margin: 100px 30px;
+  justify-content: center;
+  gap: 102px;
+}
+
+/* left */
+section.title {
+  max-width: 612px;
+}
+section.title h1 {
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 87.64px;
+}
+section.title p {
+  width: 343px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+/* right */
+section.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contents div[class^='content'] {
+  width: 486px;
+  height: 280px;
+  border-radius: 20px;
+  position: relative;
+}
+.contents div h2 {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 40px 0 0 40px;
+  color: #fff;
+}
+.contents div a {
+  position: absolute;
+  bottom: 30px;
+  right: 35.75px;
+  text-decoration: none;
+  color: #fff;
+}
+.contents .content1 {
+  background: url(../img/Rectangle\ 2.svg) no-repeat;
+}
+.contents .content2 {
+  background: url(../img/Rectangle\ 3.svg) no-repeat;
+}
+
+div[class^='content'] a {
+  background: url(../img/icon-_.svg) no-repeat right;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  section.title p {
+    width: 309px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  section.contents {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .contents div[class^='content'] {
+    width: 344px;
+    height: 198px;
+  }
+  .contents div h2 {
+    font-size: 24px;
+  }
+  .contents div a {
+    bottom: 20px;
+    right: 25.75px;
+  }
+}
+
+@media (max-width: 390px) {
+  .wrapper {
+    gap: 40px;
+    margin: 100px 16px;
+  }
+  section.title h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    line-height: 45.07px;
+  }
+  section.title p {
+    width: 309px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  section.contents {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .contents div[class^='content'] {
+    width: 356px;
+    height: 205px;
+  }
+  .contents div h2 {
+    font-size: 20px;
+  }
+  .contents div a {
+    bottom: 20px;
+    right: 25.18px;
+  }
+}
