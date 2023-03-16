@@ -1,0 +1,231 @@
+div,
+section {
+  margin: initial;
+  padding: initial;
+}
+
+.wrapper {
+  width: 700px;
+  height: 700px;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.ch-head {
+  width: 280px;
+  height: 300px;
+  position: absolute;
+  top: 210px;
+  right: 110px;
+  border-radius: 160px 160px 140px 100px;
+  border-bottom-right-radius: 140px 90px;
+  background-color: #71c1a8;
+  box-shadow: inset 0 0 10px 10px #509a82;
+  border: 5px solid;
+}
+.ch-body {
+  width: 200px;
+  height: 220px;
+  border-radius: 140px 140px 80px 120px;
+  background-color: #8cc989;
+  box-shadow: inset 0 0 20px 10px #5d7c40;
+  position: absolute;
+  /* bottom: 0; */
+  top: 460px;
+  right: 130px;
+  border: 5px solid;
+  transform: rotate(-10deg);
+}
+
+.grids-down {
+  width: 220px;
+  height: 150px;
+  position: absolute;
+  top: 570px;
+  right: 120px;
+  z-index: 2;
+  display: grid;
+  transform: rotate(20deg) skew(20deg, 10deg);
+}
+
+.grids-up {
+  width: 220px;
+  height: 150px;
+  position: absolute;
+  top: 560px;
+  right: 140px;
+  z-index: 2;
+  display: grid;
+  transform: rotate(-20deg) skew(-20deg, -10deg);
+}
+
+.bd-grid {
+  /* width: 180px; */
+  height: 5px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 128, 0.2);
+}
+.bd-grid:first-child {
+  width: 190px;
+  margin: 0 0 0 20px;
+}
+.ch-cover {
+  width: 130px;
+  height: 210px;
+  border-radius: 0 110px 110px 50px;
+  background-color: #491e02;
+  box-shadow: inset 0 0 20px 10px #936f45;
+  position: absolute;
+  /* bottom: 15px; */
+  top: 430px;
+  right: 100px;
+  transform: rotate(-30deg);
+  z-index: -1;
+  border: 5px solid;
+}
+.wrap-star {
+  width: 220px;
+  height: 220px;
+  border-radius: 140px 140px 20px 20px;
+  position: absolute;
+  top: 180px;
+  right: 100px;
+  transform: rotate(-10deg) skew(10deg, 10deg);
+}
+.wrap-star .star {
+  width: 50px;
+  height: 50px;
+  background-color: #e17460;
+  box-shadow: inset 0 0 5px 5px #c35845;
+  position: absolute;
+  border: 5px solid;
+}
+
+.wrap-star .star:nth-child(1) {
+  border-top-left-radius: 8px;
+  transform: skew(10deg, 20deg);
+  top: 50px;
+  right: 100px;
+}
+.wrap-star .star:nth-child(2) {
+  border-top-left-radius: 12px;
+  transform: rotate(72deg) skew(10deg, 20deg);
+  top: 53px;
+  right: 71px;
+}
+.wrap-star .star:nth-child(3) {
+  border-top-left-radius: 8px;
+  transform: rotate(144deg) skew(10deg, 20deg);
+  top: 80px;
+  right: 60px;
+}
+.wrap-star .star:nth-child(4) {
+  width: 60px;
+  transform: rotate(-140deg) skew(20deg, 20deg);
+  top: 85px;
+  right: 80px;
+}
+.wrap-star .star:nth-child(5) {
+  height: 60px;
+  width: 70px;
+  border-right: 0;
+  border-bottom: 0;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 18px;
+  transform: rotate(-45deg) skew(20deg, 20deg);
+  top: 65px;
+  right: 93px;
+}
+.small-glasses {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 230px;
+  right: 160px;
+}
+.small-glasses .left {
+  width: 45px;
+  height: 30px;
+  border-radius: 5px 5px 20px 20px;
+  background-color: black;
+  transform: rotate(20deg);
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  box-shadow: inset 0 0 13px royalblue;
+  border: 3px solid;
+}
+.small-glasses .right {
+  width: 45px;
+  height: 30px;
+  border-radius: 5px 5px 20px 20px;
+  background-color: black;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  box-shadow: inset 0 0 13px royalblue;
+  border: 3px solid;
+}
+
+.glasses {
+  position: absolute;
+  width: 350px;
+  height: 100px;
+  top: 330px;
+  right: 110px;
+}
+
+.glasses .left {
+  width: 160px;
+  height: 110px;
+  border-radius: 20px 100px 80px 150px;
+  border-top-left-radius: 30px 0px;
+  border-bottom-right-radius: 80px 50px;
+  position: absolute;
+  transform: rotate(20deg);
+  box-shadow: inset -3px -2px 13px lime;
+  background-color: black;
+  z-index: 2;
+  border: 5px solid;
+}
+
+.glasses .right {
+  width: 160px;
+  height: 110px;
+  border-radius: 100px 30px 150px 80px;
+  border-top-right-radius: 30px 0px;
+  border-bottom-left-radius: 80px 50px;
+  position: absolute;
+  left: 170px;
+  transform: rotate(-18deg);
+  box-shadow: inset 3px -2px 13px lime;
+  background-color: black;
+  z-index: 2;
+  border: 5px solid;
+}
+
+.glasses .middle {
+  width: 30px;
+  height: 15px;
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  box-shadow: inset 3px -1px 4px lime;
+  background-color: black;
+}
+.glasses .reflection {
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  left: 45px;
+  border-width: 0 0 0 5px;
+  border-style: solid;
+  border-color: rgba(239, 232, 232, 0.8);
+  border-radius: 150px;
+  transform: rotate(-10deg);
+  z-index: 5;
+}
