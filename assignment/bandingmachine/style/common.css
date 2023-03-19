@@ -2,7 +2,9 @@ div,
 section,
 h1,
 h2,
-p {
+p,
+ul,
+button {
   margin: initial;
   padding: initial;
 }
