@@ -109,6 +109,7 @@ div.first-container {
   display: flex;
   justify-content: space-between;
 }
+
 .change-return .balance {
   width: 200px;
   padding: 0 10px;
@@ -118,6 +119,9 @@ div.first-container {
   font-size: 14px;
   display: flex;
   justify-content: space-between;
+}
+.change-return form {
+  display: inherit;
 }
 .change-return .return-change-btn {
   width: 94px;
@@ -132,20 +136,23 @@ div.first-container {
 
 .deposit {
   margin-bottom: 11px;
-  font-size: 13px;
-  line-height: 33px;
 }
 .deposit-money {
-  height: 33px;
   display: flex;
   justify-content: space-between;
 }
 .deposit-money .input-money {
+  font-size: 13px;
+  line-height: 33px;
   width: 200px;
   padding-left: 6px;
   box-sizing: border-box;
   border-radius: 5px;
   border: 1px solid #bdbdbd;
+}
+
+.deposit-money .input-money::-webkit-input-placeholder {
+  color: #dbdbdb;
 }
 .deposit-money .deposit-btn {
   width: 94px;
@@ -166,16 +173,31 @@ div.first-container {
   height: 106px;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
   list-style-type: none;
   background-color: #eae8fe;
   border-radius: 5px;
   border: 1px solid #bdbdbd;
   padding: 12px;
   box-sizing: border-box;
+
+  overflow-y: scroll;
 }
+
+.product-in-cart::-webkit-scrollbar {
+  width: 10px;
+}
+.product-in-cart::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  background-clip: content-box;
+  border-radius: 0.5rem;
+  border: 3px solid transparent;
+}
+.product-in-cart::-webkit-scrollbar-track {
+  background-color: #eae8f2;
+  border-radius: 0.5rem;
+}
+
 .product-in-cart .product {
-  /* width: 170px; */
   width: 100%;
   height: 46px;
   margin-bottom: 6px;
@@ -226,11 +248,10 @@ div.second-container {
   height: 50px;
 }
 
-.wallet {
+.second-container .wallet {
   width: 306px;
   height: 32px;
   font-size: 14px;
-  font-weight: 700;
   line-height: 32px;
   background-color: #eae8fe;
   border-radius: 5px;
@@ -239,6 +260,10 @@ div.second-container {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+}
+
+.wallet .money strong {
+  font-weight: 700;
 }
 
 /* third part */
@@ -270,18 +295,32 @@ div.third-container {
   margin-bottom: 6px;
   border-radius: 5px;
 }
+.third-container .product-in-cart .product:last-child {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1000px;
+  border-radius: 5px;
+}
 
 .third-container .total-amount {
   font-size: 12px;
   line-height: 17px;
-  /* position: absolute;
-  left: 224px;
-  top: 428px; */
   margin: 6px 27px 40px;
   text-align: end;
 }
 
-/* REMOVE IT */
-/* div {
-  box-shadow: inset 0 0 10px salmon;
-} */
+@media (max-width: 750px) {
+  body {
+    background-size: 166px 71px;
+    background-color: #fff;
+  }
+  .wrapper {
+    flex-direction: column;
+    width: 360px;
+    gap: 0;
+    margin: 95px auto 30px auto;
+  }
+  .deposit-money .input-money::-webkit-input-placeholder {
+    text-align: end;
+  }
+}
