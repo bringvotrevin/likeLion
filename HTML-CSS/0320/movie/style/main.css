@@ -1,0 +1,153 @@
+.container {
+  width: 1060px;
+  height: 1170px;
+  background: #f2f2f2;
+  margin: 86px auto 135px;
+  padding: 40px 30px 30px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+/* header */
+
+header .movie-list {
+  font-size: 24px;
+  width: 650px;
+  border-bottom: 2px solid #dbdbdb;
+  padding-bottom: 37px;
+  margin: auto;
+  text-align: center;
+}
+
+nav.menu {
+}
+
+nav.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+nav.menu button {
+  padding: 10px 20px;
+  color: #828282;
+}
+
+/* 더 있나 확인 */
+.menu button.active {
+  font-weight: 700;
+  color: #000;
+}
+
+/* 영화 카드 */
+
+main {
+  background: #fff;
+  border: 2px solid #bdbdbd;
+  border-radius: 15px;
+  padding: 30px;
+  display: grid;
+  /* NOTE minmax */
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
+  /* margin: 0 auto; */
+  gap: 24px 23px;
+  margin-top: 28px;
+}
+
+article.movie-card {
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.movie-card div.description {
+  padding: 19px 20px 18px 20px;
+}
+
+.description img {
+  /* display: block; */
+  /* width: 250px; */
+  width: 100%;
+  aspect-ratio: 180 / 250;
+  /* NOTE 눌린 이미지 자르기 */
+  object-fit: cover;
+  border: 1px solid #bdbdbd;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+/* 말줄임표 */
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.description .movie-title {
+  font-size: 16px;
+  font-weight: 900;
+  margin: 12px 0;
+}
+
+.movie-info {
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.movie-info li :first-child {
+  color: #828282;
+  margin-right: 5px;
+}
+
+/* TODO 출연자 많을 시 말줄임표 추가하기 */
+.movie-info li :last-child {
+}
+
+.movie-info li .star {
+  background: url(../img/icon-star.svg) no-repeat 0 0 / 1em;
+  padding-left: 1.3em;
+}
+
+.movie-btn-group {
+  border-top: 1px solid #dbdbdb;
+  display: flex;
+}
+
+.movie-btn-group a,
+.movie-btn-group button {
+  background: #f2f2f2;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.movie-btn-group a {
+  border-right: 1px solid #dbdbdb;
+  border-radius: 0 0 0 10px;
+}
+
+.movie-btn-group a:focus {
+  z-index: 1;
+}
+.movie-btn-group button {
+  border-radius: 0 0 10px 0;
+}
+
+.movie-btn-group button::before {
+  content: '';
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  background: url(../img/icon-play.svg) no-repeat 0 50% / 1em;
+}
