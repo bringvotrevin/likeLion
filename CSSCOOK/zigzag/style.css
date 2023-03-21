@@ -33,17 +33,16 @@ header {
   margin-bottom: 100px;
 }
 
-h1.title {
+.header-title {
   display: inline-block;
   color: #fdfdfe;
-  /* width: 26%; */
+  width: 26%;
   font-size: 40px;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .underline {
   position: relative;
-  display: block;
 }
 
 /* TODO 길이조절 */
@@ -58,23 +57,23 @@ h1.title {
   z-index: -1;
 }
 
-.title-desc {
+.header-description {
   color: #bd8fe8;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 25px;
   position: relative;
   margin: auto 0;
-  padding-left: 80px;
+  padding-left: 100px;
 }
 
-.title-desc::before {
+.header-description::before {
   content: '';
   position: absolute;
   top: 50%;
   left: 0;
   display: block;
-  width: 60px;
+  width: 80px;
   border-bottom: 2px solid #bd8fe8;
 }
 
@@ -90,36 +89,48 @@ div[class^='content'] {
 
 /* TODO 글자에 opacity 없이 */
 .l-content {
-  width: 26%;
+  min-width: 26%;
   position: relative;
-  display: block;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.5;
 }
 
 div[class^='content']:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.content-1 .l-content {
-  background-image: url(images/photo01.png);
+.l-content::after {
+  content: '';
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
 }
-.content-2 .l-content {
-  background-image: url(images/photo02.png);
+.content-1 .l-content::after {
+  background: url(images/photo01.png) no-repeat 0 0 / cover;
 }
-.content-3 .l-content {
-  background-image: url(images/photo03.png);
+.content-2 .l-content::after {
+  background: url(images/photo02.png) no-repeat 0 0 / cover;
+}
+.content-3 .l-content::after {
+  background: url(images/photo03.png) no-repeat 0 0 / cover;
 }
 
 .l-content .keyword {
   font-size: 30px;
   color: #fdfdfe;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .r-content {
   padding: 24px;
   background-color: #fff;
+  flex-basis: 100%;
+  overflow: scroll;
 }
 
 .r-content .step {
@@ -130,26 +141,40 @@ div[class^='content']:nth-child(even) {
 
 .r-content ul li {
   font-size: 14px;
-}
-
-.r-content li {
   position: relative;
   padding-left: 20px;
-  line-height: 30px;
+  line-height: 20px;
 }
 
 .r-content li::before {
   content: '';
   position: absolute;
-  top: 10px;
+  /* REVIEW 위치? */
+  top: 5px;
   left: 0;
   width: 10px;
   height: 10px;
   background-color: #bd8fe8;
   border-radius: 5px;
-  margin: auto;
 }
 
 /* div {
   box-shadow: 0 0 5px inset rosybrown;
+} */
+/* 
+@media (max-width: 1080px) {
+  header {
+    width: ;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .header-title {
+    margin-bottom: 20px;
+  }
+  .header-description {
+    padding-left: 0;
+  }
+  .header-description::before {
+    width: 0;
+  }
 } */
