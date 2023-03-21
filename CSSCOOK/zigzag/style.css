@@ -3,33 +3,29 @@
   /* font-weight: 700; */
 }
 
-* {
-  font-weight: 500;
-}
-
-p,
-ul,
-li,
 h1,
 h2,
-h3 {
+h3,
+ul,
+li,
+p,
+body {
   margin: initial;
   padding: initial;
+}
+
+ul,
+li {
+  list-style-type: none;
 }
 
 body {
   background-color: #673399;
 }
 
-/* TODO 지우기 */
-div {
-  box-shadow: 0 0 5px royalblue;
-}
-
 .wrapper {
   width: 1080px;
   margin: 100px auto;
-  /* display: flex; */
 }
 
 header {
@@ -42,16 +38,18 @@ h1.title {
   color: #fdfdfe;
   /* width: 26%; */
   font-size: 40px;
+  margin-right: 20px;
 }
 
 .underline {
   position: relative;
+  display: block;
 }
 
+/* TODO 길이조절 */
 .underline::after {
   content: '';
   background-color: orangered;
-  display: block;
   position: absolute;
   top: 30px;
   left: 0;
@@ -61,18 +59,16 @@ h1.title {
 }
 
 .title-desc {
-  /* display: block; */
   color: #bd8fe8;
-  /* width: 74%; */
   box-sizing: border-box;
   font-size: 14px;
+  line-height: 25px;
   position: relative;
-  /* margin: auto 0; */
-  padding-left: 75px;
-  /* padding-right: 280px; */
+  margin: auto 0;
+  padding-left: 80px;
 }
 
-/* .title-desc::before {
+.title-desc::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -80,29 +76,80 @@ h1.title {
   display: block;
   width: 60px;
   border-bottom: 2px solid #bd8fe8;
-} */
+}
 
 main {
   display: flex;
   flex-direction: column;
+  gap: 24px;
 }
 
-.content {
+div[class^='content'] {
   display: flex;
 }
 
+/* TODO 글자에 opacity 없이 */
 .l-content {
   width: 26%;
   position: relative;
   display: block;
-  background: url(images/photo01.png) 0 0 cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+}
+
+div[class^='content']:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.content-1 .l-content {
+  background-image: url(images/photo01.png);
+}
+.content-2 .l-content {
+  background-image: url(images/photo02.png);
+}
+.content-3 .l-content {
+  background-image: url(images/photo03.png);
 }
 
 .l-content .keyword {
   font-size: 30px;
   color: #fdfdfe;
-  display: block;
-  /* text-align: center; */
-  position: absolute;
-  top: 50%;
 }
+
+.r-content {
+  padding: 24px;
+  background-color: #fff;
+}
+
+.r-content .step {
+  font-size: 18px;
+  margin-bottom: 32px;
+  color: #673399;
+}
+
+.r-content ul li {
+  font-size: 14px;
+}
+
+.r-content li {
+  position: relative;
+  padding-left: 20px;
+  line-height: 30px;
+}
+
+.r-content li::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #bd8fe8;
+  border-radius: 5px;
+  margin: auto;
+}
+
+/* div {
+  box-shadow: 0 0 5px inset rosybrown;
+} */

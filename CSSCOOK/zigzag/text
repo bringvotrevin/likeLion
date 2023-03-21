@@ -42,3 +42,26 @@ Once is therefore always free form repetition, injected humor, or non-characteri
 Predefined chunks as necessary, making this the first true generator on the internet.
 
 Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form.
+
+
+.title-desc::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 60px;
+  border-bottom: 2px solid #bd8fe8;
+}
+
+.underline::after {
+  content: '';
+  background-color: orangered;
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  z-index: -1;
+}
