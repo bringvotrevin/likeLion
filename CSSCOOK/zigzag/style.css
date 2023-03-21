@@ -163,7 +163,7 @@ div[class^='content']:nth-child(even) {
 @media (max-width: 1080px) {
   header {
     flex-direction: column;
-    margin: 0 auto 100px;
+    margin: 0 10px 100px 30px;
   }
   .header-title {
     margin-bottom: 20px;
@@ -173,5 +173,8 @@ div[class^='content']:nth-child(even) {
   }
   .header-description::before {
     width: 0;
+  }
+  main {
+    margin: 0 10px;
   }
 }
