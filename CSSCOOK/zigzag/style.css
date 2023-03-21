@@ -36,13 +36,15 @@ header {
 .header-title {
   display: inline-block;
   color: #fdfdfe;
-  width: 26%;
+  /* width: 26%; */
   font-size: 40px;
   margin-right: 5px;
 }
 
 .underline {
   position: relative;
+  display: block;
+  width: max-content;
 }
 
 .underline::after {
