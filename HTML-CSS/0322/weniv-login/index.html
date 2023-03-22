@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 화면</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="title">로그인 또는 회원가입</h1>
+      </header>
+      <main>
+        <p class="desc">위니브에서 여러분의 궁금증을 해결하세요!:)</p>
+        <form class="form-login">
+          <label for="inpId" class="a11y-hidden"></label>
+          <input
+            type="text"
+            id="inpId"
+            class="input-id"
+            placeholder="아이디"
+            required
+          />
+          <label type="password" for="inpPw" class="a11y-hidden"></label>
+          <input
+            type="text"
+            id="inpPw"
+            class="input-pw"
+            placeholder="비밀번호"
+            required
+          />
+          <label for="chboxKeeplogin" class="a11y-hidden"></label>
+          <input type="checkbox" id="chboxKeeplogin" class="chbox-keeplogin" />
+          <button type="submit" class="btn-login">로그인</button>
+        </form>
+        <div class="other">
+          <a href="#" class="signup">회원가입</a>
+          <a href="#" class="find-account">아이디/비밀번호 찾기</a>
+          <p>또는</p>
+          <ul class="sns-login">
+            SNS 간편 로그인
+            <li class="google">구글 계정으로 로그인</li>
+            <li class="facebook">페이스북 계정으로 로그인</li>
+            <li class="naver">네이버 계정으로 로그인</li>
+            <li class="kakaotalk">카카오톡 계정으로 로그인</li>
+          </ul>
+        </div>
+        <button class="btn-close" type="button"></button>
+      </main>
+    </div>
+  </body>
+</html>
