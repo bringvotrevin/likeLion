@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+}
+
+.aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+}
+
+.aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}/*# sourceMappingURL=016_믹스인1.css.map */

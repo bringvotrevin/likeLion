@@ -1,0 +1,17 @@
+.card {
+  // mixin은 내부에서 사용하지 않음(지역으로 x)
+  @mixin box {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card {
+    @include box;
+    background-color: blue;
+  }
+}
+
+// .profile {
+//   @include box;
+//   background-color: red;
+// }

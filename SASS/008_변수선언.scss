@@ -1,0 +1,20 @@
+$hojun1: #000;
+$hojun2: #fff;
+
+// 한글 변수를 권장하지 않음
+$호준: #f00;
+$큰글자: 34px;
+
+.one {
+  font-size: $큰글자;
+  color: $hojun2;
+}
+
+.two {
+  background-color: #0ff;
+  color: $hojun1;
+}
+
+.three {
+  color: $호준;
+}
