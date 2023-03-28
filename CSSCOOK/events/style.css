@@ -197,14 +197,22 @@ a {
     width: 0;
   }
 }
-/* 
+
 @media (max-width: 808px) {
   .content-purple .card,
   .content-purple .card:nth-child(even) {
     flex-direction: column;
+    flex-shrink: 1;
+    flex-basis: 400px;
+    margin: 0 auto;
+    max-width: 400px;
   }
-  .
-} */
+
+  .content-purple .card-cover {
+    /* max-width: 400px; */
+    width: 100%;
+  }
+}
 
 /* section-pink  */
 /* begin */
@@ -349,9 +357,9 @@ a {
     align-self: flex-end;
   }
   .content-pink .card {
-    max-width: 372px;
+    max-width: 400px;
     flex-shrink: 1;
-    flex-basis: 372px;
+    flex-basis: 400px;
     margin: 0 auto;
   }
 }
