@@ -236,6 +236,12 @@ a {
   border-radius: 5px;
   box-shadow: 0 5px 0 #b23105;
 }
+.section-pink .btn-add:hover {
+  transform: scale(1.1);
+}
+.section-pink .btn-add:active {
+  background-color: rgb(224, 60, 0);
+}
 .section-pink .underline::before {
   background-color: white;
 }
@@ -314,6 +320,14 @@ a {
   font-weight: 600;
   color: #888;
   margin-top: auto;
+}
+
+.content-pink .more:hover {
+  font-size: 14px;
+}
+.content-pink .more:active {
+  font-size: 14px;
+  color: rgb(83, 83, 83);
 }
 
 .content-pink .more::before {
