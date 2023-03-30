@@ -53,11 +53,12 @@ input[class^='input'] {
   height: 50px;
   border-radius: 5px;
   border: solid 1px #c4c4c4;
+  padding-left: 16px;
+  font-size: 16px;
 }
 input[class^='input']::placeholder {
   font-size: 16px;
   color: #767676;
-  padding-left: 16px;
 }
 
 .chbox-keeplogin {
