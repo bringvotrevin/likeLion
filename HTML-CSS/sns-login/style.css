@@ -6,7 +6,9 @@ button,
 h1,
 h2,
 div,
-p {
+p,
+ul,
+li {
   margin: initial;
   padding: initial;
 }
@@ -14,6 +16,16 @@ button {
   background: none;
   border: none;
   font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style-type: none;
 }
 
 /* wrapper */
@@ -65,12 +77,59 @@ input[class^='input']::placeholder {
   align-self: flex-start;
 }
 
-.site {
+.btn-login {
+  width: 472px;
+  font-size: 18px;
+  padding: 15px;
+  background-color: #2f80ed;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.login-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.split-line {
+  width: 1px;
+  height: 18px;
+  margin: 0 12px;
+}
+.text-or {
+  position: relative;
+  text-align: center;
+}
+
+.text-or::before,
+.text-or::after {
+  content: '';
+  position: absolute;
+  width: 210px;
+  height: 1px;
+  background-color: #c4c4c4;
+  display: inline-block;
+}
+.text-or::before {
+  top: 10px;
+  left: 0;
+}
+.text-or::after {
+  top: 10px;
+  right: 0;
+}
+.other-login {
+}
+
+.sns-login {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-a {
-  display: block;
-  /* width: auto; */
+
+.sns-login li {
+  text-align: center;
+  padding: 15px;
 }
