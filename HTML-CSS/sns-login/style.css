@@ -92,15 +92,50 @@ input[class^='input']::placeholder {
   font-size: 16px;
   color: #767676;
 }
+/* .chbox-keeplogin {
+} */
 
-.chbox-keeplogin {
-  margin-bottom: 20px;
-}
-
-.label-chbox-keeplogin {
+.label-chbox {
   display: inline-block;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
 }
 
+.label-chbox::before {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  top: -2px;
+  left: 0;
+  border: 1px solid #767676;
+  border-radius: 50%;
+}
+
+.label-chbox::after {
+  content: '';
+  width: 8.5px;
+  height: 5.5px;
+  top: 6px;
+  left: 7px;
+  position: absolute;
+  font-size: 16px;
+  border-bottom: 1px solid #767676;
+  border-left: 1px solid #767676;
+  transform: rotate(-45deg);
+}
+
+.chbox-keeplogin:checked + .label-chbox::before {
+  background-color: #2f80ed;
+}
+
+.chbox-keeplogin:checked + .label-chbox::after {
+  border-color: #fff;
+}
 .btn-login {
   width: 472px;
   font-size: 18px;
