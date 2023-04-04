@@ -120,8 +120,8 @@ input[class^='input']::placeholder {
   content: '';
   width: 8.5px;
   height: 5.5px;
-  top: 6px;
-  left: 7px;
+  top: 5px;
+  left: 6px;
   position: absolute;
   font-size: 16px;
   border-bottom: 1px solid #767676;
@@ -131,6 +131,7 @@ input[class^='input']::placeholder {
 
 .chbox-keeplogin:checked + .label-chbox::before {
   background-color: #2f80ed;
+  border: none;
 }
 
 .chbox-keeplogin:checked + .label-chbox::after {
