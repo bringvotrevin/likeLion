@@ -200,18 +200,24 @@ input[class^='input']::placeholder {
   display: block;
 }
 
+.sns-login li a::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-image: url(img/css_sprites.png);
+  /* background-size: 84px 40px; */
+}
+
 .sns-login a.google {
   border: 1px solid #767676;
   position: relative;
 }
 .sns-login a.google::before {
-  content: '';
-  position: absolute;
-  width: 28px;
-  height: 28px;
-  top: 11px;
-  left: 12px;
-  background: url(img/google_logo.svg) 0 0 / cover;
+  top: 14px;
+  left: 15px;
+  background-position: -13px -141px;
+  /* background: url(img/css_sprites.png) 0 30 / contain; */
 }
 
 .sns-login .facebook {
@@ -219,13 +225,10 @@ input[class^='input']::placeholder {
   position: relative;
 }
 .sns-login .facebook::before {
-  content: '';
-  position: absolute;
-  width: 12px;
-  height: 23px;
-  top: 11px;
-  left: 19px;
-  background: url(img/facebook_logo.svg) 0 0 / cover;
+  top: 14px;
+  left: 18px;
+  height: 25px;
+  background-position: -10px -94px;
 }
 
 .sns-login .naver {
@@ -233,24 +236,16 @@ input[class^='input']::placeholder {
   position: relative;
 }
 .sns-login .naver::before {
-  content: '';
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 11px;
+  top: 13px;
   left: 15px;
-  background: url(img/naver_logo.svg) 0 0 / cover;
+  background-position: -10px -10px;
 }
 .sns-login .kakaotalk {
   border: 1px solid #f2c94c;
   position: relative;
 }
 .sns-login .kakaotalk::before {
-  content: '';
-  position: absolute;
-  width: 21px;
-  height: 21px;
-  top: 11px;
-  left: 12px;
-  background: url(img/kakao_logo.svg) 0 0 / cover;
+  top: 13px;
+  left: 15px;
+  background-position: -10px -52px;
 }
