@@ -71,8 +71,6 @@ article.movie-card {
 }
 
 .description img {
-  /* display: block; */
-  /* width: 250px; */
   width: 100%;
   aspect-ratio: 180 / 250;
   /* NOTE 눌린 이미지 자르기 */
@@ -82,7 +80,7 @@ article.movie-card {
   border-radius: 10px;
 }
 
-/* 말줄임표 */
+/* NOTE 말줄임표 */
 .ellipsis {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -106,10 +104,6 @@ article.movie-card {
 .movie-info li :first-child {
   color: #828282;
   margin-right: 5px;
-}
-
-/* TODO 출연자 많을 시 말줄임표 추가하기 */
-.movie-info li :last-child {
 }
 
 .movie-info li .star {
