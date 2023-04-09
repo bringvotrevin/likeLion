@@ -6,7 +6,7 @@
 }
 
 body {
-  // font-family: 'SUIT', sans-serif;
+  font-family: 'SUIT', sans-serif;
 }
 
 .a11y-hidden {
@@ -44,14 +44,15 @@ body {
     aspect-ratio: 1/1;
     object-fit: cover;
     margin: 0 auto;
-    background: lightsteelblue;
+    background: rgb(220, 227, 235);
     overflow: hidden;
     // ! 밝은 색상 쓰고 싶으면 light 쓰면 vsc에서 추천해줘요.
     @include v-prefix(radius, 50%);
 
     img {
-      width: 100%;
+      width: 80%;
       display: block;
+      margin: 5px auto auto;
     }
   }
 

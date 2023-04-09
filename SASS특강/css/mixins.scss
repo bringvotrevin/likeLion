@@ -1,7 +1,3 @@
-// color
-
-$gray: #ccc;
-
 // font
 @mixin font($type: null, $align: left, $color: inherit) {
   color: $color;
