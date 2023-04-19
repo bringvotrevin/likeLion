@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom</title>
+  </head>
+  <body>
+    <article id="container">
+      <ul>
+        <li>김밥</li>
+        <li class="itHasClass">
+          비빔밥
+          <!-- 주석이 있어요 -->
+          넵
+        </li>
+        <li>만두</li>
+      </ul>
+    </article>
+    <script>
+      const getElementById = document.getElementById('container');
+      const getElementsByTagName = document.getElementsByTagName('li');
+      const querySelectorAll = document.querySelectorAll('li');
+      console.log(getElementById);
+      console.log('getElementsByTagName 반환값 : ', getElementsByTagName[1]);
+      console.log('querySelectorAll 반환값 :', querySelectorAll[1]);
+    </script>
+  </body>
+</html>
