@@ -1,35 +1,40 @@
-import styled from 'styled-components'
+import { createGlobalStyle } from "styled-components"
+import Example from "./Components/Example"
+import reset from "styled-reset"
+import normalize from "styled-normalize"
 
-const Btn = styled.button`
-  width: 100px;
-  padding: 20px;
-  box-shadow: inset 0 0 0 3px #dbdbdb;
-  font-size: 20px;
-  font-weight: 600;
-  background-color: royalblue;
-`;
+const GlobalStyle = createGlobalStyle`
+    ${normalize}
+ 
+    span {
+    color: red;
+    font-size: 12px;
+    }
 
-const FirstBtn = styled(Btn)`
-  color: white;
-`
-const SecondBtn = styled(Btn)`
-  color: black;
-  border-radius: 20px;
-  box-shadow:  0 0 2px 2px rgba(0, 0, 0, 0.3);
-`
-const ThirdBtn = styled(Btn)`
-background-color: lightgreen;
-color: white;
+    a{
+        text-decoration : none;
+        color : inherit;
+    }
+
+    button{
+        border : none;
+        cursor : pointer;
+    }
+
+    * {
+    box-sizing: border-box;
+    }
 `
 
 function App() {
   return (
-    <div>
-      hello world
-      <FirstBtn>버튼1</FirstBtn>
-      <SecondBtn>버튼2</SecondBtn>
-      <ThirdBtn>버튼4</ThirdBtn>
-    </div>
+    <>
+      <GlobalStyle />
+      <h1>hello world 1</h1>
+      <span>hello world 2</span>
+      <Example />
+    </>
   );
 }
+
 export default App;
