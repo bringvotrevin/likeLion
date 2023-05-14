@@ -1,12 +1,19 @@
-// import 
+import react, { useState } from 'react';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
+import Modal from './components/modal/Modal';
 
 function App() {
+  // const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
-    <div className='wrapper'>
-      <div className='title'>
-        <img src='./img/title.png' alt='타이틀' />
-      </div>
-    </div>
+    <>
+      <Header />
+      <Main />
+      <Footer />
+      <Modal />
+    </>
   );
 }
 export default App;
