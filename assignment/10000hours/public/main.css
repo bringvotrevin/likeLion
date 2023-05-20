@@ -1,0 +1,27 @@
+body,
+div,
+button,
+header,
+main,
+footer,
+section,
+p,
+h1,
+img {
+  margin: initial;
+  padding: initial;
+}
+
+/* header */
+
+.header {
+  width: 564px;
+  margin: 100px auto;
+}
+
+.img-title {
+  padding: 70px 0;
+  width: 100%;
+  background: url(./loading.png) no-repeat center;
+}
+
