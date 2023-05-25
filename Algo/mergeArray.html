@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>mergeArray</title>
-	</head>
-	<body>
-		<script>
-			function mergeArray(arr1, arr2) {
-				let mergedArray;
-					
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mergeSortedArray</title>
+  </head>
+  <body>
+    <script>
+      // function mergeArray(arr1, arr2) {
+      // let mergedArray = [...arr2, ...arr2];
+      // setMerged = new Set(mergeArray);
+      // setMerged.sort((a, b) => a - b);
+      // return mergedArray;
+      //   mergeSortedArrays(myArr1, myArr2);
+      // }
+      const myArr1 = [1, 2, 3, 5, 4];
+      const myArr2 = [30, 8, 10, 35, , 26, 20];
+      function mergeSortedArrays(arr1, arr2) {
+        if (arr1.length === 0) {
+          return '병합을 할 배열이 없습니다.';
+        }
+        if (arr2.length === 0) {
+          return '병합을 할 배열이 없습니다.';
+        }
+        const mergedArray = [];
 
-				return mergedArray;
-			}
-		</script>
-	</body>
+        let arr1FirstEl = arr1[0];
+        let arr2FirstEl = arr2[0];
+        let i = 1;
+        let j = 1;
+
+        // arr1FirstEl, arr2FirstEl 두 값이 모두 falsy 를 반활할 때까지 반복합니다.
+        while (arr1FirstEl || arr2FirstEl) {
+          if (arr2FirstEl === undefined || arr1FirstEl < arr2FirstEl) {
+            // mergedArray = [arr1FirstEl , arr2FirstEl]
+            mergedArray.push(arr1FirstEl);
+            arr1FirstEl = arr1[i];
+            i++;
+          } else {
+            // mergedArray = [arr2FirstEl, arr1FirstEl]
+            mergedArray.push(arr2FirstEl);
+            arr2FirstEl = arr2[j];
+            j++;
+          }
+        }
+        console.log(mergedArray);
+        return mergedArray;
+      }
+      mergeSortedArrays(myArr1, myArr2);
+    </script>
+  </body>
 </html>
