@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>solve</title>
+  </head>
+  <body>
+    <script>
+      const food = {
+        a: [20, 30],
+        b: [30, 30],
+        c: [10, 15],
+        d: [50, 10],
+      };
+
+      const total = (arr) => {
+        const total = [];
+        for (cur in food) {
+          total.push([cur, food[cur][0] + food[cur][1]]);
+        }
+        return total;
+      };
+
+      const timeArr = total(food);
+
+			const n = (timeArr) => {
+				for (let i = 0; i < timeArr.length; i++) {
+					
+				}
+			}
+    </script>
+  </body>
+</html>
